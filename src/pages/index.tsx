@@ -9,7 +9,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="container mx-auto flex flex-col p-4">
+      <main className="container mx-auto flex flex-col flex-grow p-2">
         <h2>Home Page</h2>
       </main>
     </>

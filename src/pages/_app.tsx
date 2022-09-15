@@ -17,9 +17,11 @@ const MyApp: AppType = ({
 }) => {
   return (
     <SessionProvider session={session}>
-      <Header />
-      <Component {...pageProps} />
-      <Footer />
+      <div className="container flex flex-col justify-between min-h-screen">
+        <Header />
+        <Component {...pageProps} />
+        <Footer />
+      </div>
     </SessionProvider>
   );
 };
