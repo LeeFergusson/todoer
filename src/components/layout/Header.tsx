@@ -7,12 +7,18 @@ const Header = () => {
         <Link href="/">ToDo</Link>
       </h1>
       <div className="flex justify-between w-full">
-        <ul className="my-auto">
-          <li className="mx-2 align-middle">User Nav</li>
-        </ul>
-        <ul className="my-auto">
-          <li>Session Nav</li>
-        </ul>
+        <nav className="my-auto">
+          <h2 className="hidden">Main Navigation</h2>
+          <ul>
+            <li className="mx-2 align-middle">User Nav</li>
+          </ul>
+        </nav>
+        <nav className="my-auto">
+          <h2 className="hidden">Session Navigation</h2>
+          <ul>
+            <li>Session Nav</li>
+          </ul>
+        </nav>
       </div>
     </div>
   );
