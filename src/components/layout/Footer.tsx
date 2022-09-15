@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <div className="flex justify-between p-2 border-t-2">
-      <small>ToDo</small>
+      <small>ToDoer</small>
       <small>A next js Application</small>
       <small>
         Created by{" "}

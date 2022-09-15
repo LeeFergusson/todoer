@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div className="flex p-2 border-b-2">
       <h1 className="text-2xl">
-        <Link href="/">ToDo</Link>
+        <Link href="/">ToDoer</Link>
       </h1>
       <div className="flex justify-between w-full">
         <nav className="my-auto">
