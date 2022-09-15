@@ -8,12 +8,15 @@ import superjson from "superjson";
 import type { AppRouter } from "../server/router";
 import "../styles/globals.css";
 
+import Header from "../components/layout/Header";
+
 const MyApp: AppType = ({
   Component,
   pageProps: { session, ...pageProps },
 }) => {
   return (
     <SessionProvider session={session}>
+      <Header />
       <Component {...pageProps} />
     </SessionProvider>
   );
