@@ -1,9 +1,19 @@
+import { signIn, signOut, useSession } from "next-auth/react";
 import Link from "next/link";
 
 const SessionMenu = () => {
+  const session = useSession();
+
+  if (session.status === "authenticated") {
+    return (
+      <ul>
+        <li onClick={() => signOut()}>Sign-out</li>
+      </ul>
+    );
+  }
   return (
     <ul>
-      <li>Session Nav</li>
+      <li onClick={() => signIn()}>Sign-up / Sign-in</li>
     </ul>
   );
 };
