@@ -32,7 +32,9 @@ const Header = () => {
         <nav className="my-auto">
           <h2 className="hidden">Main Navigation</h2>
           <ul>
-            <li className="mx-2 align-middle">User Nav</li>
+            <li className="mx-2 align-middle">
+              <Link href="/about">About</Link>
+            </li>
           </ul>
         </nav>
         <nav className="my-auto">
