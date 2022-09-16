@@ -1,5 +1,13 @@
 import Link from "next/link";
 
+const SessionMenu = () => {
+  return (
+    <ul>
+      <li>Session Nav</li>
+    </ul>
+  );
+};
+
 const Header = () => {
   return (
     <div className="flex p-2 border-b-2">
@@ -15,9 +23,7 @@ const Header = () => {
         </nav>
         <nav className="my-auto">
           <h2 className="hidden">Session Navigation</h2>
-          <ul>
-            <li>Session Nav</li>
-          </ul>
+          <SessionMenu />
         </nav>
       </div>
     </div>
