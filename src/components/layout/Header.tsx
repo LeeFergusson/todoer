@@ -7,13 +7,17 @@ const SessionMenu = () => {
   if (session.status === "authenticated") {
     return (
       <ul>
-        <li onClick={() => signOut()}>Sign-out</li>
+        <li>
+          <button onClick={() => signOut()}>Sign-out</button>
+        </li>
       </ul>
     );
   }
   return (
     <ul>
-      <li onClick={() => signIn()}>Sign-up / Sign-in</li>
+      <li>
+        <button onClick={() => signIn()}>Sign-up / Sign-in</button>
+      </li>
     </ul>
   );
 };
