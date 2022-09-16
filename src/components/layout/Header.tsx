@@ -24,23 +24,25 @@ const SessionMenu = () => {
 
 const Header = () => {
   return (
-    <div className="flex p-2 border-b-2">
-      <h1 className="text-2xl">
-        <Link href="/">ToDoer</Link>
-      </h1>
-      <div className="flex justify-between w-full">
-        <nav className="my-auto">
-          <h2 className="hidden">Main Navigation</h2>
-          <ul>
-            <li className="mx-2 align-middle">
-              <Link href="/about">About</Link>
-            </li>
-          </ul>
-        </nav>
-        <nav className="my-auto">
-          <h2 className="hidden">Session Navigation</h2>
-          <SessionMenu />
-        </nav>
+    <div className="min-w-full border-b-2">
+      <div className="container mx-auto flex flex-grow p-2">
+        <h1 className="text-2xl">
+          <Link href="/">ToDoer</Link>
+        </h1>
+        <div className="flex justify-between w-full">
+          <nav className="my-auto">
+            <h2 className="hidden">Main Navigation</h2>
+            <ul>
+              <li className="mx-2 align-middle">
+                <Link href="/about">About</Link>
+              </li>
+            </ul>
+          </nav>
+          <nav className="my-auto">
+            <h2 className="hidden">Session Navigation</h2>
+            <SessionMenu />
+          </nav>
+        </div>
       </div>
     </div>
   );

@@ -17,9 +17,11 @@ const MyApp: AppType = ({
 }) => {
   return (
     <SessionProvider session={session}>
-      <div className="container flex flex-col justify-between min-h-screen mx-auto">
+      <div className="flex flex-col min-h-screen">
         <Header />
-        <Component {...pageProps} />
+        <div className="flex-grow">
+          <Component {...pageProps} />
+        </div>
         <Footer />
       </div>
     </SessionProvider>
