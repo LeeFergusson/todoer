@@ -64,12 +64,20 @@ model VerificationToken {
   @@unique([identifier, token])
 }
 
-model UserListItem {
-  id   String @id @default(cuid())
-  name String
+model ListItem {
+  id         String        @id @default(cuid())
+  title      String
+  listItem   UserListItem? @relation(fields: [listItemId], references: [id])
+  listItemId String
+}
 
-  list   UserList? @relation(fields: [listId], references: [id])
+model UserListItem {
+  id    String @id @default(cuid())
+  index Int
+
+  list   UserList?  @relation(fields: [listId], references: [id])
   listId String?
+  items  ListItem[]
 }
 
 model UserList {
